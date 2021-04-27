@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Login @logged-event="loggedEventFunction" v-if="!logged"/>
-    <Graph :names="names" :values="values" :labels="labels" :min="0" :max="max" v-if="logged"/>
+    <Graph  :names="names" :values="values" :labels="labels" :min="0" :max="max" v-if="logged"/>
   </div>
 </template>
 
@@ -60,13 +60,4 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

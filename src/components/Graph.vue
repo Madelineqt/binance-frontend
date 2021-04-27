@@ -1,6 +1,6 @@
 <template>
-  <div>
-      <graph-line
+  <div class="flex items-center justify-center mt-32">
+      <graph-line 
             :width="600"
             :height="400"
             :shape="'normal'"
