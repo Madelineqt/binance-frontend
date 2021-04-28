@@ -38,7 +38,7 @@ export default {
     },
     getValues: async function(){
       const token = localStorage.getItem("token");
-      const response = await axios.get('http://localhost:8000/test',{headers:{'Authorization':`Bearer ${token}`}}).then(res => {
+      const response = await axios.get('https://binance-graph-api.herokuapp.com/test',{headers:{'Authorization':`Bearer ${token}`}}).then(res => {
         return res.data
       }).catch(err => {
         throw err
